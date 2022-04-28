@@ -5,7 +5,7 @@ import schemaTypes from 'all:part:@sanity/base/schema-type'
 import singletonHome from './singletonHome'
 
 // Documents
-import work from './work'
+// import work from './work'
 
 // Common
 import seo from './common/seo'
@@ -16,7 +16,6 @@ export default createSchema({
   
   types: schemaTypes.concat([
     singletonHome,
-    work,
     defaultImage,
     seo
   ]),

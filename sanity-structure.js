@@ -3,7 +3,6 @@ import IframePreview from './preview/IFramePreview'
 
 import {
   FiHome,
-  FiCamera,
 } from 'react-icons/fi'
 
 import { getGlobalSlug, previewURL } from './utils/resolveProductionUrl'
@@ -32,7 +31,5 @@ export default () =>
   S.list()
     .title("Content")
     .items([
-      S.listItem().title('Home').child(S.editor().id('home').schemaType('home').documentId('singleton-home').views(getPreview('home'))).icon(FiHome),
-      S.divider(),
-      S.listItem().title('Work').child(S.documentTypeList('work').title('Work')).icon(FiCamera),
+      S.listItem().title('Home').child(S.editor().id('home').schemaType('home').documentId('singleton-home').views(getPreview('home'))).icon(FiHome)
     ]);
