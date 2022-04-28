@@ -26,10 +26,10 @@ export default {
       validation: Rule => Rule.required()
     },
     {
-      title: 'Hero Services',
+      title: 'Hero Roles',
       name: 'heroServices',
       type: 'array', 
-      description: 'The list of services in the hero, eg: "Creative Directors", "Motion Designers" etc.',
+      description: 'The list of roles in the hero, eg: "Creative Directors", "Motion Designers" etc.',
       of: [{
         type: 'string',
         validation: Rule => Rule.required()
@@ -233,6 +233,22 @@ export default {
           }
         }
       }
+    },
+    {
+      title: 'Get Started Clients Text',
+      name: 'getStartedClientsText',
+      type: 'text',
+      rows: 4,
+      description: 'The text for the "Clients" section of "Get Started" area',
+      validation: Rule => Rule.required()
+    },
+    {
+      title: 'Get Started Talent Text',
+      name: 'getStartedTalentText',
+      type: 'text',
+      rows: 4,
+      description: 'The text for the "Talent" section of "Get Started" area',
+      validation: Rule => Rule.required()
     },
     {
       title: 'SEO / Share Settings',
