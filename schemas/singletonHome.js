@@ -191,34 +191,40 @@ export default {
       validation: Rule => Rule.required()
     },
     {
-      title: 'Quote',
-      name: 'quote',
-      type: 'object',
+      title: 'Quotes',
+      name: 'quotes',
+      type: 'array',
       description: 'Quote details for the "Kind Words" section',
-      fields: [
-        {
-          title: 'Text',
-          name: 'text',
-          type: 'text',
-          rows: 3,
-          description: 'eg: "Britt has an incredible knack of reading between..."',
-          validation: Rule => Rule.required()
-        },
-        {
-          title: 'Author',
-          name: 'author',
-          type: 'string',
-          description: 'eg: "Kelly Wu"',
-          validation: Rule => Rule.required()
-        },
-        {
-          title: 'Role',
-          name: 'role',
-          type: 'string',
-          description: 'eg: "Recruitment Lead, Google"',
-          validation: Rule => Rule.required()
-        }
-      ],
+      of: [{
+        title: 'Quote',
+        name: 'quote',
+        type: 'object',
+        description: 'Quote details for the "Kind Words" section',
+        fields: [
+          {
+            title: 'Text',
+            name: 'text',
+            type: 'text',
+            rows: 3,
+            description: 'eg: "Britt has an incredible knack of reading between..."',
+            validation: Rule => Rule.required()
+          },
+          {
+            title: 'Author',
+            name: 'author',
+            type: 'string',
+            description: 'eg: "Kelly Wu"',
+            validation: Rule => Rule.required()
+          },
+          {
+            title: 'Role',
+            name: 'role',
+            type: 'string',
+            description: 'eg: "Recruitment Lead, Google"',
+            validation: Rule => Rule.required()
+          }
+        ]
+      }],
       preview: {
         select: {
           text: 'text',
