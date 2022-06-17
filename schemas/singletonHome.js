@@ -54,8 +54,8 @@ export default {
     {
       title: 'Bio Text',
       name: 'bioText',
-      type: 'text',
-      rows: 4,
+      type: 'array', 
+      of: [{type: 'block'}],
       description: 'The text used in the "Bio" overlay',
       validation: Rule => Rule.required()
     },
