@@ -101,17 +101,17 @@ export default {
       validation: Rule => Rule.required()
     },
     {
-      title: 'Ethos & Clients Text',
+      title: 'Ethos & Disciplines Text',
       name: 'ethosAndClientsText',
       type: 'array', 
       of: [{type: 'block'}],
       validation: Rule => Rule.required()
     },
     {
-      title: 'Clients',
+      title: 'Disciplines',
       name: 'clients',
       type: 'array', 
-      description: 'The list of clients, eg: "Google", "MediaMonks" etc.',
+      description: 'The list of disciplines, eg: "React", "Adobe CC" etc.',
       of: [{
         type: 'string',
         validation: Rule => Rule.required()
@@ -209,13 +209,13 @@ export default {
             description: 'eg: "Britt has an incredible knack of reading between..."',
             validation: Rule => Rule.required()
           },
-          {
-            title: 'Author',
-            name: 'author',
-            type: 'string',
-            description: 'eg: "Kelly Wu"',
-            validation: Rule => Rule.required()
-          },
+          // {
+          //   title: 'Author',
+          //   name: 'author',
+          //   type: 'string',
+          //   description: 'eg: "Kelly Wu"',
+          //   validation: Rule => Rule.required()
+          // },
           {
             title: 'Role',
             name: 'role',
