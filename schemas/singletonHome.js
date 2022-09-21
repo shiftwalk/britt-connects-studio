@@ -60,7 +60,13 @@ export default {
       validation: Rule => Rule.required()
     },
     {
-      title: 'We Work With',
+      title: 'Sectors Heading',
+      name: 'sectorsHeading',
+      type: 'string',
+      validation: Rule => Rule.required()
+    },
+    {
+      title: 'Sectors',
       name: 'weWorkWith',
       type: 'array', 
       description: 'The list of people we work with',
@@ -101,7 +107,13 @@ export default {
       validation: Rule => Rule.required()
     },
     {
-      title: 'Ethos & Disciplines Text',
+      title: 'About Heading',
+      name: 'aboutHeading',
+      type: 'string',
+      validation: Rule => Rule.required()
+    },    
+    {
+      title: 'About Text',
       name: 'ethosAndClientsText',
       type: 'array', 
       of: [{type: 'block'}],
@@ -191,6 +203,12 @@ export default {
       validation: Rule => Rule.required()
     },
     {
+      title: 'Quotes Heading',
+      name: 'quotesHeading',
+      type: 'string',
+      validation: Rule => Rule.required()
+    },
+    {
       title: 'Quotes',
       name: 'quotes',
       type: 'array',
@@ -241,19 +259,31 @@ export default {
       }
     },
     {
-      title: 'Get Started Clients Text',
-      name: 'getStartedClientsText',
-      type: 'text',
-      rows: 4,
-      description: 'The text for the "Clients" section of "Get Started" area',
+      title: 'Get Started Left Block Title',
+      name: 'getStartedLeftBlockTitle',
+      type: 'string',
       validation: Rule => Rule.required()
     },
     {
-      title: 'Get Started Talent Text',
+      title: 'Get Started Left Block Text',
+      name: 'getStartedClientsText',
+      type: 'text',
+      rows: 4,
+      description: 'The text for the left section of "Get Started" area',
+      validation: Rule => Rule.required()
+    },
+    {
+      title: 'Get Started Right Block Title',
+      name: 'getStartedRightBlockTitle',
+      type: 'string',
+      validation: Rule => Rule.required()
+    },
+    {
+      title: 'Get Started Right Text',
       name: 'getStartedTalentText',
       type: 'text',
       rows: 4,
-      description: 'The text for the "Talent" section of "Get Started" area',
+      description: 'The text for the right section of "Get Started" area',
       validation: Rule => Rule.required()
     },
     {
